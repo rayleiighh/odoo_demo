@@ -29,7 +29,7 @@ class TestUsers(TransactionCase):
                     'name': 'Marie-Noël',
                     'login': 'mnv',
                 })
-                self.assertTrue(user.description)
+                self.assertIn('\w \'', user.description)
 
 
     def test_description_one_line(self):
