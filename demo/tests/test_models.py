@@ -29,7 +29,7 @@ class TestUsers(TransactionCase):
                     'name': 'Marie-Noël',
                     'login': 'mnv',
                 })
-                self.assertEqual(user.description, None)
+                self.assertTrue(user.description)
 
 
     def test_description_one_line(self):
